@@ -1,0 +1,31 @@
+[MESSAGES CONTROL]
+disable=
+    missing-docstring,
+    wildcard-import,
+    unused-wildcard-import,
+    fixme,
+    too-many-arguments,
+    too-many-locals,
+    too-many-instance-attributes,
+    too-many-public-methods,
+    too-few-public-methods,
+    redefined-outer-name,
+    global-statement,
+    eval-used,
+    broad-except
+
+[FORMAT]
+max-line-length=120
+
+[BASIC]
+method-rgx=(([a-z_][a-z0-9_]+)|(_[a-z0-9_]*)|(__[a-z][a-z0-9_]+__))$
+function-rgx=(([a-z_][a-z0-9_]+)|(_[a-z0-9_]*)|(__[a-z][a-z0-9_]+__))$
+variable-rgx=(([a-z_][a-z0-9_]+)|(_[a-z0-9_]*)|(__[a-z][a-z0-9_]+__))$
+argument-rgx=(([a-z_][a-z0-9_]+)|(_[a-z0-9_]*)|(__[a-z][a-z0-9_]+__))$
+
+[TYPECHECK]
+ignored-classes=pytest
+
+[SIMILARITIES]
+ignore-imports=yes
+min-similarity-lines=6
